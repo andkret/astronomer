@@ -1,0 +1,2 @@
+- name: Deploy Apache Airflow DAGs to Astro
+  uses: astronomer/deploy-action@v0.2
