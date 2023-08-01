@@ -15,3 +15,7 @@ jobs:
     steps:
     - name: Deploy to Astro
       uses: astronomer/deploy-action@v0.2
+      with:
+        deployment-id: clkl748h55892915t2wglwsxej4
+        pytest: true
+        pytest-file: /tests/test-tags.py
