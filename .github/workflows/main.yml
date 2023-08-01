@@ -18,4 +18,4 @@ jobs:
       with:
         deployment-id: clkl748h55892915t2wglwsxej4
         pytest: true
-        pytest-file: /tests/test-tags.py
+        pytest-file: /tests/test_example_dag_basic.py
