@@ -47,3 +47,29 @@ Contact
 =======
 
 The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
+
+
+Steps to setup this project:
+
+- create Astro account
+- create deployment
+- setup Astro cli
+- create Github repo and clone it
+- go to repo folder and initialize the Astro project
+- start the dev environment 
+- open dev environment localhost:8080
+- look at the code and then do a manual ```astro deploy``` 
+- or set dad deployment true with ```astro deployment update --dag-deploy enable``` and then use ```astro deploy --dags``` to just deploy the dags
+- go to the deployment and click top right to open airflow in the cloud. Toggle enable to let the flow run.
+- go back to astro cloud Look at the stats and start a manual run there. 
+- create a Access token for the workspace
+- create a GitHub Action with this template [deploy-astro](https://github.com/marketplace/actions/deploy-apache-airflow-dags-to-astro). Add the deployment ID and the access token
+- GitHub add secrets & variables the access token variable name: ASTRO_API_TOKEN
+- make code changes and create pull request
+- check status of the github action and see the changed results in the cloud Airflow code.
+
+
+
+# Helpful links
+- Workspace roles [click](https://docs.astronomer.io/astro/workspace-api-tokens)
+- workspace roles [click here](https://docs.astronomer.io/astro/user-permissions#workspace-roles)
